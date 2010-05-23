@@ -1,3 +1,5 @@
+(require 'color-theme)
+
 (defun color-theme-dark-laptop ()
   "Color theme by Laurent Michel, created 2001-05-24.
 Includes custom, fl, font-lock, gnus, message, widget."
@@ -139,6 +141,3 @@ Includes custom, fl, font-lock, gnus, message, widget."
      (widget-field-face ((t (:background "dim gray"))))
      (widget-inactive-face ((t (:foreground "light gray"))))
      (widget-single-line-field-face ((t (:background "dim gray")))))))
-
-;; set theme to dark laptop
-(color-theme-dark-laptop)
