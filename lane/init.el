@@ -16,3 +16,6 @@
 
 ;; org mode experimentation
 (setq org-log-done t)
+
+;; allow narrowing
+(put 'narrow-to-region 'disabled nil)
