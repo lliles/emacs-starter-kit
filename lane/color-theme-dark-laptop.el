@@ -9,7 +9,7 @@ Includes custom, fl, font-lock, gnus, message, widget."
      ((background-color . "black")
       (background-mode . dark)
       (border-color . "black")
-      (cursor-color . "yellow")
+      (cursor-color . "dark green")
       (foreground-color . "white")
       (mouse-color . "sienna1"))
      ((gnus-mouse-face . highlight)
