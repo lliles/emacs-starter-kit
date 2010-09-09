@@ -4,6 +4,9 @@
 ;; set misc settings
 (setq visible-bell nil)
 (setq column-number-mode t)
+(setq ispell-program-name "aspell")
+(setq ispell-list-command "list")
+(setq ispell-extra-args '("--sug-mode=ultra"))
 
 ;; remove hl-mode hook
 (remove-hook 'coding-hook 'turn-on-hl-line-mode)
@@ -60,5 +63,4 @@ as needed to match the length of the longest line."
 (defun kill-rectangle-save ()
   "Save the rectangle as if killed with kill-rectangle, but
 don't delete it.")
-
 
