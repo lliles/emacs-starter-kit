@@ -23,6 +23,8 @@
 ;; allow narrowing
 (put 'narrow-to-region 'disabled nil)
 
+;; don't display scratch buffer message
+(setq initial-scratch-message "")
 
 ;; set mysql client output to vertical instead of table
 (setq sql-mysql-options (list "-E"))
