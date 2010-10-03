@@ -29,6 +29,13 @@
 ;; set mysql client output to vertical instead of table
 (setq sql-mysql-options (list "-E"))
 
+;; swap command/options keys in mac os x
+(when (eq system-type 'darwin) 
+  (setq mac-option-key-is-meta nil)
+  (setq mac-command-key-is-meta t)
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier nil))
+
 ;; custom functions
 (defun longest-line-length ()
   "Returns the length of the longest line in the current buffer.
