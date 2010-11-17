@@ -1,3 +1,6 @@
+;; Author: Jeremy Whitlock
+;; Site: ThoughtSpark.org (http://www.thoughtspark.org/node/50)
+
 ;; Custom functions/hooks for persisting/loading frame geometry upon save/load
 (defun save-frameg ()
   "Gets the current frame's geometry and saves to ~/.emacs.frameg."
