@@ -1,12 +1,6 @@
 ;; set path
 (setenv "PATH" "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/lane/dev/lein-stable:/Users/lane/dev/leiningen/bin:/Users/lane/.rvm/bin")
 
-;; enable durendal
-(durendal-enable)
-
-;; load dark laptop color theme
-(color-theme-dark-laptop)
-
 ;; set misc settings
 (setq visible-bell nil)
 (setq column-number-mode t)
