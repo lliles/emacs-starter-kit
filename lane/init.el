@@ -36,6 +36,10 @@
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier nil))
 
+;; put the replace regexp commands at your fingertips!
+(defalias 'rr 'replace-regexp)
+(defalias 'qrr 'query-replace-regexp)
+
 ;; custom functions
 (defun longest-line-length ()
   "Returns the length of the longest line in the current buffer.
