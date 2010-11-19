@@ -40,6 +40,9 @@
 (defalias 'rr 'replace-regexp)
 (defalias 'qrr 'query-replace-regexp)
 
+;; don't wrap lines in partial width windows
+(setq truncate-partial-width-windows t)
+
 ;; custom functions
 (defun longest-line-length ()
   "Returns the length of the longest line in the current buffer.
