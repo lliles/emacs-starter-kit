@@ -1,12 +1,12 @@
-;; set path
-(setenv "PATH" "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/lane/dev/lein-stable:/Users/lane/dev/leiningen/bin:/Users/lane/.rvm/bin")
-
 ;; set misc settings
 (setq visible-bell nil)
 (setq column-number-mode t)
-(setq ispell-program-name "aspell")
-(setq ispell-list-command "list")
-(setq ispell-extra-args '("--sug-mode=ultra"))
+
+;; flyspell setup for os x (install aspell)
+(when (eq system-type 'darwin)
+  (setq ispell-program-name "aspell")
+  (setq ispell-list-command "list")
+  (setq ispell-extra-args '("--sug-mode=ultra")))
 
 ;; remove hl-mode hook
 (remove-hook 'coding-hook 'turn-on-hl-line-mode)
