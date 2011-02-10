@@ -47,10 +47,10 @@
 (set-default 'truncate-lines t)
 
 ;; remap C-w to backward-kill-word
-(global-set-key "\C-w" 'backward-kill-word)
+;(global-set-key "\C-w" 'backward-kill-word)
 ;; and consequently remap C-x C-k to kill-region since we clobbered
 ;; that with backward-kill-word
-(global-set-key "\C-x\C-k" 'kill-region)
+;(global-set-key "\C-x\C-k" 'kill-region)
 
 ;; custom functions
 (defun longest-line-length ()
@@ -89,3 +89,8 @@ as needed to match the length of the longest line."
   "Save the rectangle as if killed with kill-rectangle, but
 don't delete it.")
 
+(defun align-repeat (start end regexp)
+  "Repeat alignment with respect to the given regular expression."
+    (interactive "r\nsAlign regexp: ")
+    (align-regexp start end 
+        (concat "\\(\\s-*\\)" regexp) 1 1 t))
